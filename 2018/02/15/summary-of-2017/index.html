@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="samba,vbox," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -57,19 +57,16 @@
 
 
 
-<meta name="description" content="近期需要新的开发环境，于是在笔记本上装了一个 vbox + Ubuntu 14.04 LTS。通常使用 vbox 与宿主共享文件都会使用 vbox 自带的共享文件夹功能，这次我使用 samba，通过在 Windows 上映射盘符来达到同样的目的。
-要实现 Linux 系统与 Windows 系统之间的盘符映射，需要在 Linux 上安装 samba 并进行配置。">
+<meta name="description" content="记得去年总结 2016 年时，觉得已经是比较困难的一年了。谁料想回头看，这根本不算什么，随着面对更大的困境，走出困境，人也就得到了成长。那些青涩和不成熟便也被所面对的困境削去不见。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vbox 下 Ubuntu 与 Win7 的 samba 配置">
-<meta property="og:url" content="http://yoursite.com/2016/01/17/samba-setting/index.html">
+<meta property="og:title" content="2017年">
+<meta property="og:url" content="http://yoursite.com/2018/02/15/summary-of-2017/index.html">
 <meta property="og:site_name" content="Evolution">
-<meta property="og:description" content="近期需要新的开发环境，于是在笔记本上装了一个 vbox + Ubuntu 14.04 LTS。通常使用 vbox 与宿主共享文件都会使用 vbox 自带的共享文件夹功能，这次我使用 samba，通过在 Windows 上映射盘符来达到同样的目的。
-要实现 Linux 系统与 Windows 系统之间的盘符映射，需要在 Linux 上安装 samba 并进行配置。">
-<meta property="og:updated_time" content="2016-01-18T18:38:19.000Z">
+<meta property="og:description" content="记得去年总结 2016 年时，觉得已经是比较困难的一年了。谁料想回头看，这根本不算什么，随着面对更大的困境，走出困境，人也就得到了成长。那些青涩和不成熟便也被所面对的困境削去不见。">
+<meta property="og:updated_time" content="2018-02-26T14:58:26.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vbox 下 Ubuntu 与 Win7 的 samba 配置">
-<meta name="twitter:description" content="近期需要新的开发环境，于是在笔记本上装了一个 vbox + Ubuntu 14.04 LTS。通常使用 vbox 与宿主共享文件都会使用 vbox 自带的共享文件夹功能，这次我使用 samba，通过在 Windows 上映射盘符来达到同样的目的。
-要实现 Linux 系统与 Windows 系统之间的盘符映射，需要在 Linux 上安装 samba 并进行配置。">
+<meta name="twitter:title" content="2017年">
+<meta name="twitter:description" content="记得去年总结 2016 年时，觉得已经是比较困难的一年了。谁料想回头看，这根本不算什么，随着面对更大的困境，走出困境，人也就得到了成长。那些青涩和不成熟便也被所面对的困境削去不见。">
 
 
 
@@ -87,7 +84,7 @@
   };
 </script>
 
-  <title> vbox 下 Ubuntu 与 Win7 的 samba 配置 | Evolution </title>
+  <title> 2017年 | Evolution </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -256,7 +253,7 @@
             
             
               
-                vbox 下 Ubuntu 与 Win7 的 samba 配置
+                2017年
               
             
           </h1>
@@ -268,8 +265,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-17T17:41:42+08:00" content="2016-01-17">
-              2016-01-17
+            <time itemprop="dateCreated" datetime="2018-02-15T21:40:07+08:00" content="2018-02-15">
+              2018-02-15
             </time>
           </span>
 
@@ -282,8 +279,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/system/" itemprop="url" rel="index">
-                    <span itemprop="name">system</span>
+                  <a href="/categories/life/" itemprop="url" rel="index">
+                    <span itemprop="name">life</span>
                   </a>
                 </span>
 
@@ -298,8 +295,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/01/17/samba-setting/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/17/samba-setting/" itemprop="commentsCount"></span>
+                <a href="/2018/02/15/summary-of-2017/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/02/15/summary-of-2017/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -320,47 +317,35 @@
       
 
       
-        <p>近期需要新的开发环境，于是在笔记本上装了一个 vbox + Ubuntu 14.04 LTS。通常使用 vbox 与宿主共享文件都会使用 vbox 自带的共享文件夹功能，这次我使用 samba，通过在 Windows 上映射盘符来达到同样的目的。</p>
-<p>要实现 Linux 系统与 Windows 系统之间的盘符映射，需要在 Linux 上安装 samba 并进行配置。</p>
-<a id="more"></a>
-<h2 id="u6B65_u9AA4"><a href="#u6B65_u9AA4" class="headerlink" title="步骤"></a>步骤</h2><h3 id="u5EFA_u7ACB_u7CFB_u7EDF_u7528_u6237"><a href="#u5EFA_u7ACB_u7CFB_u7EDF_u7528_u6237" class="headerlink" title="建立系统用户"></a>建立系统用户</h3><p>通常用已有用户就行了，假设是 root。注意，这里的系统账户指的是 Linux 的，不是 samba。</p>
-<h3 id="u521B_u5EFA_samba__u5E10_u6237"><a href="#u521B_u5EFA_samba__u5E10_u6237" class="headerlink" title="创建 samba 帐户"></a>创建 samba 帐户</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ smbpasswd <span class="operator">-a</span> root</span><br><span class="line">new SMB password:</span><br><span class="line">Retype new SMB password:</span><br></pre></td></tr></table></figure>
-<p>这里的密码是用于 Windows 下登录 samba 服务的密码，可以是空。</p>
-<h3 id="u914D_u7F6E_smb-conf"><a href="#u914D_u7F6E_smb-conf" class="headerlink" title="配置 smb.conf"></a>配置 smb.conf</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[cipher]</span><br><span class="line">  comment = mirror <span class="keyword">for</span> Dev</span><br><span class="line">  path = /</span><br><span class="line">  public = yes</span><br><span class="line">  browseable = no</span><br><span class="line">  writable = yes</span><br><span class="line">  create mask = <span class="number">0644</span></span><br><span class="line">  valid user = root</span><br><span class="line">  write list = root</span><br></pre></td></tr></table></figure>
-<p>这里的 [cipher] 是使用 Windows 连接时的‘share’标识，valid user 对应 2. 中加入的 samba 账户。</p>
-<h3 id="u91CD_u542F_samba__u670D_u52A1"><a href="#u91CD_u542F_samba__u670D_u52A1" class="headerlink" title="重启 samba 服务"></a>重启 samba 服务</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ service smb restart</span><br></pre></td></tr></table></figure>
-<p>如果是 smbd，可以使用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ /etc/init.d/smbd status</span><br></pre></td></tr></table></figure></p>
-<p>查看状态，显示<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">* smbd is running</span><br></pre></td></tr></table></figure></p>
-<p>就说明没问题了。</p>
-<h3 id="u5728_Windows__u4E0B_u6620_u5C04_u76D8_u7B26"><a href="#u5728_Windows__u4E0B_u6620_u5C04_u76D8_u7B26" class="headerlink" title="在 Windows 下映射盘符"></a>在 Windows 下映射盘符</h3><p>在资源管理器窗口输入 \\ip\cipher，弹出验证对话框， 输入 root 和密码。到这里正常情况下就可以看到 Windows 系统上多了一个盘符，映射到 samba 配置文件指定的位置。</p>
-<h2 id="u5E38_u89C1_u95EE_u9898"><a href="#u5E38_u89C1_u95EE_u9898" class="headerlink" title="常见问题"></a>常见问题</h2><p>由于使用的是 vbox 建立的虚拟主机，映射时的 IP 如何填呢？<br>实际上只使用 NAT 的方式是不行的，需要另开一块网卡，使用‘Host only’模式。重启虚拟机使用 ifconfig 就能看到 eth1 (即是刚才新开的第二块虚拟网卡) 的 ip 地址，使用这个地址通过 Windows 做映射就可以了。</p>
-<p>无法连通？<br>先看看是不是 Linux 的防火墙的问题，使用 iptable 命令操作。</p>
+        <p>记得去年总结 2016 年时，觉得已经是比较困难的一年了。谁料想回头看，这根本不算什么，随着面对更大的困境，走出困境，人也就得到了成长。那些青涩和不成熟便也被所面对的困境削去不见。<br><a id="more"></a></p>
+<h3 id="u5DE5_u4F5C"><a href="#u5DE5_u4F5C" class="headerlink" title="工作"></a>工作</h3><p>今年工作上的关键词是“业务”，真的是开年到年末都在做业务。第一季度为了垂直项目的业绩突击，也承担了来自不同方面的压力，好在结果还不错。坦白说，那些质疑和挑战，都是确实存在的问题，但是我坚信在当时，我们的选择是最佳的，被质疑的方案反倒是我觉得在这个项目上最正确的决定。<br>第二三季度，整个团队被各种业务压得喘不过气，导致的严重问题就是技术深度做不下去，一直在糙快猛的往前走，却沉淀不下来东西。<br>到了第四季度，这大概是我这几年面对的最大变化，我的主要工作方向发生了变化。从积极的角度看，这种变化也是对自身的一种挑战机会，适应变化才能成长。而另一方面，我对此充满了危机感，接下来的几个月，我都在思考一个问题：我的核心竞争力是什么？我需要找到自己和团队的生存之道。<br>总体而言，从 16 年开始感受到困境，17 年面对所谓的更大困境，其实这两年才是自己获得实质性成长的阶段。</p>
+<h3 id="u9605_u8BFB"><a href="#u9605_u8BFB" class="headerlink" title="阅读"></a>阅读</h3><p>今年的时间与去年有些相似，也有些不同：<br>相似之处是，同样花了不少时间阅读 ML 和 NLP 方面的材料；不同之处是 12 月开始的几个月花了很多时间在 Java 工程架构上，系统学习了 Java 8 引入的新特性，以及公司内服务架构的各种基础设施。<br>《NLP with Deep Learning》，《动手学深度学习》是两个我认为很有收获的系统性课程，逐一的去 coding 完成作业，能够理清楚很多细节问题。<br>《Java 8 实战》是我认为在介绍 Java 8 方面的最佳材料，同样的，coding 是最有效的学习方式。<br>另外，学习了一些探索性数据分析及可视化的技巧，也是蛮有收获的。<br>强化学习的材料，零碎的看了一些，不成系统，想要用起来还得深入进去系统性的学习。<br>今年开始特意的去读了一些管理方面的书籍，团队管理是水非常深的一个点，并不是看起来那么容易，还需要持续的思考和学习。</p>
+<h3 id="u751F_u6D3B"><a href="#u751F_u6D3B" class="headerlink" title="生活"></a>生活</h3><p>2017 年对生活的最大感恩就是 Meng 顺利的进入高校任教，奇迹般的是，最后几乎是获得了我们所拥有的条件下的最优解。9 月份开学后，Meng 也忙碌了起来，但是我能看到，这是她这几年的辛苦中最快乐的时光。即便还是像以前那样忙碌，丝毫没有轻松，但是她很享受这份工作，也真的非常认真，以至于我对比自己曾经的读书经历，她的学生真的太幸福了。认真做事，自然大家都能感受到，她的学生很喜欢她的课，她很开心，我也跟着开心。<br>在牵手纪念日那天，我们完成了身份转换，经历这 5 年的艰辛，终于生活也要上正轨了，爸妈和朋友们也都为我们高兴。</p>
+<h3 id="u6539_u53D8"><a href="#u6539_u53D8" class="headerlink" title="改变"></a>改变</h3><p>老规矩，Review 一下去年的计划。<br>Yes - 领证<br>No - 完成计划内的阅读和提升<br>虽然有阅读和提升，但是没有达到预期。究其原因，工作压力没有降下来，导致个人时间不足。<br>No - 将团队和个人的工作压力降下来<br>这个点很失败，不得不承认，工作压力非但没有下降，反而是加强了。猝不及防的变化将压力不断的加大。<br>No - 保持健身<br>由于脚腕受伤，停止了健身，加之饮食没有控制，体重急速增加了 30 斤，达到了历史最高点，想想真是恐怖啊。</p>
+<p>好吧，每年虽然都有些进步，但是始终不能完成所有计划，总有缺憾。但计划还是要制定的，且等明年再来看，加油吧。</p>
+<ul>
+<li>健身，减重</li>
+<li>完成计划内的技术提升</li>
+<li>团队管理方面更加游刃有余，将自己解放出来</li>
+</ul>
 
       
     </div>
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/samba/" rel="tag">#samba</a>
-          
-            <a href="/tags/vbox/" rel="tag">#vbox</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/01/27/summary-of-2016/" rel="next" title="2016年">
+                <i class="fa fa-chevron-left"></i> 2016年
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/01/17/excel-image-processing/" rel="prev" title="使用Excel裁剪图片">
-                使用Excel裁剪图片 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -386,8 +371,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/01/17/samba-setting/"
-           data-title="vbox 下 Ubuntu 与 Win7 的 samba 配置" data-url="http://yoursite.com/2016/01/17/samba-setting/">
+      <div class="ds-thread" data-thread-key="2018/02/15/summary-of-2017/"
+           data-title="2017年" data-url="http://yoursite.com/2018/02/15/summary-of-2017/">
       </div>
     
   </div>
@@ -478,7 +463,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u6B65_u9AA4"><span class="nav-number">1.</span> <span class="nav-text">步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u5EFA_u7ACB_u7CFB_u7EDF_u7528_u6237"><span class="nav-number">1.1.</span> <span class="nav-text">建立系统用户</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u521B_u5EFA_samba__u5E10_u6237"><span class="nav-number">1.2.</span> <span class="nav-text">创建 samba 帐户</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u914D_u7F6E_smb-conf"><span class="nav-number">1.3.</span> <span class="nav-text">配置 smb.conf</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u91CD_u542F_samba__u670D_u52A1"><span class="nav-number">1.4.</span> <span class="nav-text">重启 samba 服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5728_Windows__u4E0B_u6620_u5C04_u76D8_u7B26"><span class="nav-number">1.5.</span> <span class="nav-text">在 Windows 下映射盘符</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5E38_u89C1_u95EE_u9898"><span class="nav-number">2.</span> <span class="nav-text">常见问题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u5DE5_u4F5C"><span class="nav-number">1.</span> <span class="nav-text">工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u9605_u8BFB"><span class="nav-number">2.</span> <span class="nav-text">阅读</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u751F_u6D3B"><span class="nav-number">3.</span> <span class="nav-text">生活</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u6539_u53D8"><span class="nav-number">4.</span> <span class="nav-text">改变</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
